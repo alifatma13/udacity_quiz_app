@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private String mMotherOfDrangonAns2;
     private Button submit;
     private Button reset;
-    private String totalScore;
+
 
 
     @Override
@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     public void onClick(View v) {
 
-
+        String totalScore;
         switch (v.getId()) {
             // To check whether correct radio button or check box is clicked. Also to match the textView answer and increment the score on click of SUBMIT button
             case R.id.submit:
@@ -93,10 +93,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 if (mRadioButtonAnswer5.isChecked()) {
                     score++;
                 }
-                if (mCheckBoxRob.isChecked() && mCheckBoxSansa.isChecked() && mCheckBoxArya.isChecked() && mCheckBoxBran.isChecked()) {
+                if (mCheckBoxRob.isChecked() && mCheckBoxSansa.isChecked() && mCheckBoxArya.isChecked() && mCheckBoxBran.isChecked() && !mCheckBoxJohn.isChecked() ) {
                     score++;
                 }
-                if (mMotherOfDragon.getText().toString().equals(mMotherOfDrangonAns1) || mMotherOfDragon.getText().toString().equals(mMotherOfDrangonAns2)) {
+                if (mMotherOfDragon.getText().toString().equalsIgnoreCase(mMotherOfDrangonAns1) || mMotherOfDragon.getText().toString().equalsIgnoreCase(mMotherOfDrangonAns2)) {
                     score++;
                 }
 

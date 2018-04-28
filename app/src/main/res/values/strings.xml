@@ -36,6 +36,7 @@
     <string name="question_7">7) Who is the Mother of Dragons?</string>
     <string name="answer_7_a">Daenerys Targaryen</string>
     <string name="answer_7_b">Daenerys</string>
+    <string name="answer_7_hint">Enter the name here</string>
     <string name="submit">Submit</string>
     <string name="reset">Reset</string>
     <string name="totalScore">Your Score is: %1$d </string>
